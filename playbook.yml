@@ -1,0 +1,7 @@
+---
+#copy master.gitconfig to .gitconfig
+
+- name: Ensure master.gitconfig is copy to .gitconfig
+  hosts: localhost
+  tasks:
+  - copy: "src=~/master.gitconfig dest=~/.gitconfig"
